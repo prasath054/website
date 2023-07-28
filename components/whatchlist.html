@@ -1,0 +1,553 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatchList</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="p-4 dark:bg-gray-800 shadow-lg dark:text-gray-100">
+        <div class="container flex justify-between h-12 mx-auto">
+            <div class="flex">
+                <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-8 h-8 fill-indigo-600 dark:text-violet-400">
+                        <path d="M27.912 7.289l-10.324-5.961c-0.455-0.268-1.002-0.425-1.588-0.425s-1.133 0.158-1.604 0.433l0.015-0.008-10.324 5.961c-0.955 0.561-1.586 1.582-1.588 2.75v11.922c0.002 1.168 0.635 2.189 1.574 2.742l0.016 0.008 10.322 5.961c0.455 0.267 1.004 0.425 1.59 0.425 0.584 0 1.131-0.158 1.602-0.433l-0.014 0.008 10.322-5.961c0.955-0.561 1.586-1.582 1.588-2.75v-11.922c-0.002-1.168-0.633-2.189-1.573-2.742zM27.383 21.961c0 0.389-0.211 0.73-0.526 0.914l-0.004 0.002-10.324 5.961c-0.152 0.088-0.334 0.142-0.53 0.142s-0.377-0.053-0.535-0.145l0.005 0.002-10.324-5.961c-0.319-0.186-0.529-0.527-0.529-0.916v-11.922c0-0.389 0.211-0.73 0.526-0.914l0.004-0.002 10.324-5.961c0.152-0.090 0.334-0.143 0.53-0.143s0.377 0.053 0.535 0.144l-0.006-0.002 10.324 5.961c0.319 0.185 0.529 0.527 0.529 0.916z"></path>
+                        <path d="M22.094 19.451h-0.758c-0.188 0-0.363 0.049-0.515 0.135l0.006-0.004-4.574 2.512-5.282-3.049v-6.082l5.282-3.051 4.576 2.504c0.146 0.082 0.323 0.131 0.508 0.131h0.758c0.293 0 0.529-0.239 0.529-0.531v-0.716c0-0.2-0.11-0.373-0.271-0.463l-0.004-0.002-5.078-2.777c-0.293-0.164-0.645-0.26-1.015-0.26-0.39 0-0.756 0.106-1.070 0.289l0.010-0.006-5.281 3.049c-0.636 0.375-1.056 1.055-1.059 1.834v6.082c0 0.779 0.422 1.461 1.049 1.828l0.009 0.006 5.281 3.049c0.305 0.178 0.67 0.284 1.061 0.284 0.373 0 0.723-0.098 1.027-0.265l-0.012 0.006 5.080-2.787c0.166-0.091 0.276-0.265 0.276-0.465v-0.716c0-0.293-0.238-0.529-0.529-0.529z"></path>
+                    </svg>
+                </a>
+                <ul class="items-stretch hidden space-x-3 lg:flex">
+                    <li class="flex">
+                        <li class="flex">
+                            <a rel="noopener noreferrer" href="#" class="flex items-center px-4    hover:text-indigo-600 dark:border-transparent">Fundamentals</a>
+                        </li>
+                        <a rel="noopener noreferrer" href="#" class="flex items-center px-4   hover:text-indigo-600 dark:border-transparent">Technical</a>
+                    </li>
+                    <li class="flex">
+                        <a rel="noopener noreferrer" href="#" class="flex items-center px-4   dark:border-transparent dark:text-violet-400  hover:text-indigo-600 dark:border-violet-400">WhatchList</a>
+                    </li>
+                    <li class="flex">
+                        <a rel="noopener noreferrer" href="#" class="flex items-center px-4  hover:text-indigo-600  dark:border-transparent">News</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="items-center flex-shrink-0 hidden lg:flex">
+                <button class="px-6 py-2 bg-indigo-600 text-white font-medium text-sm rounded dark:bg-indigo-400 dark:text-gray-900">Log in</button>
+            </div>
+            <button class="p-4 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-100">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section class=" px-10 py-10 mx-auto">
+        <div class="bg-white p-3 rounded-lg shadow-lg mt-10 ">
+            <div class="flex justify-between">
+                <div class=" flex gap-2">
+                    <p class=" text-4xl font-medium subpixel-antialiased  text-indigo-600">Core WhatchList</p>
+                     <Select class="border mt-1.5 px-3 my-auto py-2 rounded-md text-gray-700 antialiased bg-transparent focus:outline-none uppercase text-sm tracking-wide">
+                       
+                        <option value="Other WhatchList " >Other WhatchList</option>
+                       
+
+                     </Select>
+                </div>
+                <a href="#" class=" flex gap-2 p-3 text-gray-700 my-auto border rounded-lg">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" class="w-5 h-5 my-auto" xmlns="http://www.w3.org/2000/svg"><g></g><path d="M16 2v2h-11v-2h11zM5 9h11v-2h-11v2zM5 14h11v-2h-11v2zM2 2c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1zM2 7c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1zM2 12c-0.552 0-1 0.447-1 1s0.448 1 1 1 1-0.447 1-1-0.448-1-1-1z"></path></svg>
+                    <p class="my-auto  uppercase">Manage Companies</p>
+
+                </a>
+
+
+            </div>
+
+            <div class=" flex justify-end gap-5 mt-12">
+                <a href="#" class=" flex gap-3 p-3 px-6 hover:text-indigo-600 text-gray-700 my-auto border rounded-lg">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class=" w-4 h-4 my-auto" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M0 20.084c.043.53.23 1.063.718 1.778.58.849 1.576 1.315 2.303.567.49-.505 5.794-9.776 8.35-13.29a.761.761 0 011.248 0c2.556 3.514 7.86 12.785 8.35 13.29.727.748 1.723.282 2.303-.567.57-.835.728-1.42.728-2.046 0-.426-8.26-15.798-9.092-17.078-.8-1.23-1.044-1.498-2.397-1.542h-1.032c-1.353.044-1.597.311-2.398 1.542C8.267 3.991.33 18.758 0 19.77Z"></path></svg>
+                    <p class="my-auto  uppercase text-sm font-medium tracking-widest">Export</p>
+
+                </a>
+                <a href="#" class=" flex gap-2 p-3 hover:text-indigo-600 text-gray-700 my-auto border rounded-lg">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"><path d="M416.3 256c0-21 13.1-38.9 31.7-46.1-4.9-20.5-13-39.7-23.7-57.1-6.4 2.8-13.2 4.3-20.1 4.3-12.6 0-25.2-4.8-34.9-14.4-14.9-14.9-18.2-36.8-10.2-55-17.3-10.7-36.6-18.8-57-23.7C295 82.5 277 95.7 256 95.7S217 82.5 209.9 64c-20.5 4.9-39.7 13-57.1 23.7 8.1 18.1 4.7 40.1-10.2 55-9.6 9.6-22.3 14.4-34.9 14.4-6.9 0-13.7-1.4-20.1-4.3C77 170.3 68.9 189.5 64 210c18.5 7.1 31.7 25 31.7 46.1 0 21-13.1 38.9-31.6 46.1 4.9 20.5 13 39.7 23.7 57.1 6.4-2.8 13.2-4.2 20-4.2 12.6 0 25.2 4.8 34.9 14.4 14.8 14.8 18.2 36.8 10.2 54.9 17.4 10.7 36.7 18.8 57.1 23.7 7.1-18.5 25-31.6 46-31.6s38.9 13.1 46 31.6c20.5-4.9 39.7-13 57.1-23.7-8-18.1-4.6-40 10.2-54.9 9.6-9.6 22.2-14.4 34.9-14.4 6.8 0 13.7 1.4 20 4.2 10.7-17.4 18.8-36.7 23.7-57.1-18.4-7.2-31.6-25.1-31.6-46.2zm-159.4 79.9c-44.3 0-80-35.9-80-80s35.7-80 80-80 80 35.9 80 80-35.7 80-80 80z"></path></svg>
+                    <p class="my-auto  uppercase text-sm font-medium tracking-widest">Edit Columns</p>
+
+                </a>
+
+
+
+            </div>
+       <div class='w-full mt-5 px-2'>
+        <div class=" grid grid-cols-15 border-b-2 pb-3  font-medium gap-3 antialiased  text-indigo-600">
+            <div class=" col-span-2 flex gap-5">
+              <p class=" ">  S.No ^</p>
+              <p>Name</p>
+
+            
+
+               
+            </div>
+            <div class="flex gap-1 ">
+                CMP <p class=" text-gray-600 text-sm ">Rs.</p> 
+
+            </div>
+            <div class=" ">
+                P/E
+
+            </div>
+            <div class="break-words   ">
+                MarCap <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+            </div>
+            <div class="  ">
+                Divyld <span class=" text-gray-600 text-sm my-auto">%</span> 
+
+
+            </div>
+            <div class="  ">
+                NP Qtr <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+            </div>
+            <div class="  ">
+                 Qtr gain  <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+            </div>
+            <div class="  ">
+                Sales Qtr <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+           </div>
+           <div class="  ">
+            Qtr Sales  <span class=" text-gray-600 text-sm my-auto">%</span> 
+
+
+       </div>
+       <div class="  ">
+        ROCE <span class=" text-gray-600 text-sm my-auto">%</span> 
+
+
+   </div>
+   <div class="  ">
+    Sales <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+</div>
+<div class="  ">
+    Debt <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+</div>
+<div class="  ">
+    EPS 12M <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+</div>
+<div class="  ">
+    PA 12M <span class=" text-gray-600 text-sm my-auto">Rs.Cr</span> 
+
+
+</div>
+      
+           
+            
+            
+
+
+        </div>
+        <div class=" grid grid-cols-15 border-b-2 pb-3 mt-3  gap-3 antialiased   text-gray-600">
+            <div class=" col-span-2 flex gap-5">
+              <p class=" text-indigo-600"> 1</p>
+              <div class="flex gap-3 text-indigo-600">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"><path d="M21 8c-.202 0-4.85.029-9 2.008C7.85 8.029 3.202 8 3 8a1 1 0 0 0-1 1v9.883a1 1 0 0 0 .305.719c.195.188.48.305.729.28l.127-.001c.683 0 4.296.098 8.416 2.025.016.008.034.005.05.011.119.049.244.083.373.083s.254-.034.374-.083c.016-.006.034-.003.05-.011 4.12-1.928 7.733-2.025 8.416-2.025l.127.001c.238.025.533-.092.729-.28.194-.189.304-.449.304-.719V9a1 1 0 0 0-1-1zM4 10.049c1.485.111 4.381.48 7 1.692v7.742c-3-1.175-5.59-1.494-7-1.576v-7.858zm16 7.858c-1.41.082-4 .401-7 1.576v-7.742c2.619-1.212 5.515-1.581 7-1.692v7.858z"></path><circle cx="12" cy="5" r="3"></circle></svg> <a href="#"> Mind Tree</a>
+              </div>
+              
+
+            
+
+               
+            </div>
+            <div >
+                3433.85
+               
+
+            </div>
+            <div>
+                29.96	
+            </div>
+            <div>
+                56643.29
+            </div>
+            <div>
+                1.08	
+            </div>
+            <div>
+                508.70
+            </div>
+            <div>
+                27.53	
+            </div>
+            <div>
+                3400.40
+            </div>
+            <div>
+                31.48
+            </div>
+            <div>
+                41.54
+            </div>
+            <div>
+                12168.90	
+            </div>
+            <div>
+                613.40
+            </div>
+           <div>
+            114.72	
+           </div>
+           <div>
+            1890.90
+           </div>
+           
+      
+           
+            
+            
+
+
+        </div>
+       
+        <div class=" grid grid-cols-15 border-b-2 pb-3 mt-3  gap-3 antialiased   text-gray-600">
+            <div class=" col-span-2 flex gap-5">
+              <p class=" text-indigo-600"> 2</p>
+              <div class="flex gap-3 text-indigo-600">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"><path d="M21 8c-.202 0-4.85.029-9 2.008C7.85 8.029 3.202 8 3 8a1 1 0 0 0-1 1v9.883a1 1 0 0 0 .305.719c.195.188.48.305.729.28l.127-.001c.683 0 4.296.098 8.416 2.025.016.008.034.005.05.011.119.049.244.083.373.083s.254-.034.374-.083c.016-.006.034-.003.05-.011 4.12-1.928 7.733-2.025 8.416-2.025l.127.001c.238.025.533-.092.729-.28.194-.189.304-.449.304-.719V9a1 1 0 0 0-1-1zM4 10.049c1.485.111 4.381.48 7 1.692v7.742c-3-1.175-5.59-1.494-7-1.576v-7.858zm16 7.858c-1.41.082-4 .401-7 1.576v-7.742c2.619-1.212 5.515-1.581 7-1.692v7.858z"></path><circle cx="12" cy="5" r="3"></circle></svg> <a href="#"> Tanla</a>
+              </div>
+              
+
+            
+
+               
+            </div>
+            <div >
+                3433.85
+               
+
+            </div>
+            <div>
+                29.96	
+            </div>
+            <div>
+                56643.29
+            </div>
+            <div>
+                1.08	
+            </div>
+            <div>
+                508.70
+            </div>
+            <div>
+                27.53	
+            </div>
+            <div>
+                3400.40
+            </div>
+            <div>
+                31.48
+            </div>
+            <div>
+                41.54
+            </div>
+            <div>
+                12168.90	
+            </div>
+            <div>
+                613.40
+            </div>
+           <div>
+            114.72	
+           </div>
+           <div>
+            1890.90
+           </div>
+           
+      
+           
+            
+            
+
+
+        </div>
+        <div class=" grid grid-cols-15 border-b-2 pb-3 mt-3  gap-3 antialiased   text-gray-600">
+            <div class=" col-span-2 flex gap-5">
+              <p class=" text-indigo-600"> 3</p>
+              <div class="flex gap-3 text-indigo-600">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"><path d="M21 8c-.202 0-4.85.029-9 2.008C7.85 8.029 3.202 8 3 8a1 1 0 0 0-1 1v9.883a1 1 0 0 0 .305.719c.195.188.48.305.729.28l.127-.001c.683 0 4.296.098 8.416 2.025.016.008.034.005.05.011.119.049.244.083.373.083s.254-.034.374-.083c.016-.006.034-.003.05-.011 4.12-1.928 7.733-2.025 8.416-2.025l.127.001c.238.025.533-.092.729-.28.194-.189.304-.449.304-.719V9a1 1 0 0 0-1-1zM4 10.049c1.485.111 4.381.48 7 1.692v7.742c-3-1.175-5.59-1.494-7-1.576v-7.858zm16 7.858c-1.41.082-4 .401-7 1.576v-7.742c2.619-1.212 5.515-1.581 7-1.692v7.858z"></path><circle cx="12" cy="5" r="3"></circle></svg> <a href="#"> Infoysis</a>
+              </div>
+              
+
+            
+
+               
+            </div>
+            <div >
+                3433.85
+               
+
+            </div>
+            <div>
+                29.96	
+            </div>
+            <div>
+                56643.29
+            </div>
+            <div>
+                1.08	
+            </div>
+            <div>
+                508.70
+            </div>
+            <div>
+                27.53	
+            </div>
+            <div>
+                3400.40
+            </div>
+            <div>
+                31.48
+            </div>
+            <div>
+                41.54
+            </div>
+            <div>
+                12168.90	
+            </div>
+            <div>
+                613.40
+            </div>
+           <div>
+            114.72	
+           </div>
+           <div>
+            1890.90
+           </div>
+           
+      
+           
+            
+            
+
+
+        </div>
+        <div class=" grid grid-cols-15 border-b-2 pb-3 mt-3  gap-3 antialiased   text-gray-600">
+            <div class=" col-span-2 flex gap-5">
+              <p class=" text-indigo-600"> 4</p>
+              <div class="flex gap-3 text-indigo-600">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"><path d="M21 8c-.202 0-4.85.029-9 2.008C7.85 8.029 3.202 8 3 8a1 1 0 0 0-1 1v9.883a1 1 0 0 0 .305.719c.195.188.48.305.729.28l.127-.001c.683 0 4.296.098 8.416 2.025.016.008.034.005.05.011.119.049.244.083.373.083s.254-.034.374-.083c.016-.006.034-.003.05-.011 4.12-1.928 7.733-2.025 8.416-2.025l.127.001c.238.025.533-.092.729-.28.194-.189.304-.449.304-.719V9a1 1 0 0 0-1-1zM4 10.049c1.485.111 4.381.48 7 1.692v7.742c-3-1.175-5.59-1.494-7-1.576v-7.858zm16 7.858c-1.41.082-4 .401-7 1.576v-7.742c2.619-1.212 5.515-1.581 7-1.692v7.858z"></path><circle cx="12" cy="5" r="3"></circle></svg> <a href="#"> Wipro</a>
+              </div>
+              
+
+            
+
+               
+            </div>
+            <div >
+                3433.85
+               
+
+            </div>
+            <div>
+                29.96	
+            </div>
+            <div>
+                56643.29
+            </div>
+            <div>
+                1.08	
+            </div>
+            <div>
+                508.70
+            </div>
+            <div>
+                27.53	
+            </div>
+            <div>
+                3400.40
+            </div>
+            <div>
+                31.48
+            </div>
+            <div>
+                41.54
+            </div>
+            <div>
+                12168.90	
+            </div>
+            <div>
+                613.40
+            </div>
+           <div>
+            114.72	
+           </div>
+           <div>
+            1890.90
+           </div>
+           
+      
+           
+            
+            
+
+
+        </div>
+        <div class=" grid grid-cols-15 border-b-2 pb-3 mt-3  gap-3 antialiased   text-gray-600">
+            <div class=" col-span-2 flex gap-5">
+              <p class=" text-indigo-600"> 5</p>
+              <div class="flex gap-3 text-indigo-600">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"><path d="M21 8c-.202 0-4.85.029-9 2.008C7.85 8.029 3.202 8 3 8a1 1 0 0 0-1 1v9.883a1 1 0 0 0 .305.719c.195.188.48.305.729.28l.127-.001c.683 0 4.296.098 8.416 2.025.016.008.034.005.05.011.119.049.244.083.373.083s.254-.034.374-.083c.016-.006.034-.003.05-.011 4.12-1.928 7.733-2.025 8.416-2.025l.127.001c.238.025.533-.092.729-.28.194-.189.304-.449.304-.719V9a1 1 0 0 0-1-1zM4 10.049c1.485.111 4.381.48 7 1.692v7.742c-3-1.175-5.59-1.494-7-1.576v-7.858zm16 7.858c-1.41.082-4 .401-7 1.576v-7.742c2.619-1.212 5.515-1.581 7-1.692v7.858z"></path><circle cx="12" cy="5" r="3"></circle></svg> <a href="#"> TCS</a>
+              </div>
+              
+
+            
+
+               
+            </div>
+            <div >
+                3433.85
+               
+
+            </div>
+            <div>
+                29.96	
+            </div>
+            <div>
+                56643.29
+            </div>
+            <div>
+                1.08	
+            </div>
+            <div>
+                508.70
+            </div>
+            <div>
+                27.53	
+            </div>
+            <div>
+                3400.40
+            </div>
+            <div>
+                31.48
+            </div>
+            <div>
+                41.54
+            </div>
+            <div>
+                12168.90	
+            </div>
+            <div>
+                613.40
+            </div>
+           <div>
+            114.72	
+           </div>
+           <div>
+            1890.90
+           </div>
+           
+      
+           
+            
+            
+
+
+        </div>
+
+       </div>
+      
+
+
+        </div>
+
+    </section>
+
+    <footer class="w-full mt-20 bg-gray-100 dark:bg-gray-900 py-16">
+        <div class="md:px-12 lg:px-28">
+          <div class="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
+           
+            <ul
+              role="list"
+              class="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8"
+            >
+              <li role="listitem"><a href="#" class="hover:text-primary">Home</a></li>
+              <li role="listitem"><a href="#" class="hover:text-primary">WhatchList</a></li>
+              <li role="listitem"><a href="#" class="hover:text-primary">News</a></li>
+              <li role="listitem"><a href="#" class="hover:text-primary">Technical</a></li>
+              <li role="listitem"><a href="#" class="hover:text-primary">Fundamentals</a></li>
+            </ul>
+            <div class="m-auto flex w-max items-center justify-between space-x-4">
+              <a href="tel:+243996660436" aria-label="call">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="m-auto w-5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="mailto:hello@mail.com" aria-label="send mail">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="m-auto w-5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" title="facebook" target="blank" aria-label="facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="m-auto w-5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" title="linkedin" target="blank" aria-label="linkedin">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="m-auto w-5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+      
+            <div class="text-center">
+              <span class="text-sm tracking-wide"
+                >Copyright © SuriyaGokul <span id="year"></span> | All right reserved</span
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+                                          
+    
+</body>
+</html>
